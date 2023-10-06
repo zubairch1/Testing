@@ -26,11 +26,7 @@ jobs:
         distribution: 'zulu'
         java-version: 8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-      uses: actions/upload-artifact@v3
-      with:
-          name: artifacts
-          path: target/*.jar
+      run: mvn -B package --file pom.xml -cp target/postgresql-42.6.0.jar
         
     - name: Stamp artifact file name with commit hash
       run: |
