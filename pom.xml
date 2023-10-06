@@ -33,7 +33,7 @@
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>org.postgresql</groupId>
-							<artifactId>postgresql-42.6.0</artifactId>
+							<artifactId>postgresql</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 				</configuration>
