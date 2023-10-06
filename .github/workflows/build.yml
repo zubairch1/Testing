@@ -65,3 +65,8 @@ jobs:
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
          -Danypoint.password="$PASSWORD" 
+    - name: Debug Information
+      run: |
+        echo "Artifact Name: $artifactName"
+        echo "Username: $USERNAME"
+        echo "Password: $PASSWORD"
