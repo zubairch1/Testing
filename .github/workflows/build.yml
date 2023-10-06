@@ -61,10 +61,4 @@ jobs:
         PASSWORD: 'Pakistan@1990'
       run: |
         artifactName=$(ls *.jar | head -1)
-        echo "Artifact Name: $artifactName"
-        echo "Username: $USERNAME"
-        echo "Password: $PASSWORD"
-        mvn deploy -DmuleDeploy \
-         -Dmule.artifact=$artifactName \
-         -Danypoint.username="$USERNAME" \
-         -Danypoint.password="$PASSWORD" 
+        mvn clean package deploy -DmuleDeploy -Dusername="$USERNAME" -Dpassword="$PASSWORD"
