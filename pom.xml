@@ -32,7 +32,7 @@
 				<configuration>
 					<sharedLibraries>
 						<sharedLibrary>
-							<groupId>com.mycompany</groupId>
+							<groupId>org.postgresql</groupId>
 							<artifactId>postgresql-42.6.0</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
