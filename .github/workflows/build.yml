@@ -27,13 +27,6 @@ jobs:
         java-version: 8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Provide JAR and Dependencies
-      run: |
-        mkdir -p jars
-        cp postgresql-42.6.0.jar jars/
-        mvn dependency:copy-dependencies -DoutputDirectory=jars
-      artifacts:
-        path: jars
     - name: Stamp artifact file name with commit hash
       run: |
         artifactName1=$(ls target/*.jar | head -1)
