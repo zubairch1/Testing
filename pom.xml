@@ -32,8 +32,8 @@
 				<configuration>
 					<sharedLibraries>
 						<sharedLibrary>
-							<groupId>mysql</groupId>
-							<artifactId>mysql-connector-java</artifactId>
+							<groupId>com.mycompany</groupId>
+							<artifactId>postgresql-42.6.0</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 				</configuration>
@@ -61,9 +61,9 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.22</version>
+			<groupId>com.mycompany</groupId>
+			<artifactId>postgresql-42.6.0</artifactId>
+			<version>0.1</version>
 		</dependency>
 	</dependencies>
 
