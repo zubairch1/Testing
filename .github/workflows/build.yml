@@ -61,4 +61,4 @@ jobs:
         PASSWORD: ${{ secrets.ANYPOINT_PLATFORM_PASSWORD }}
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn clean package deploy -DmuleDeploy -Dusername="$USERNAME" -Dpassword="$PASSWORD"
+        mvn deploy -DmuleDeploy -Dmule.artifact=$artifactName -Danypoint.username="$USERNAME" -Danypoint.password="$PASSWORD"
